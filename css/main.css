@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --l_cyan: hsl(193, 38%, 86%);
+    --n_green: hsl(150, 100%, 66%);
+    --g_blue: hsl(217, 19%, 38%);
+    --dg_blue: hsl(217, 19%, 24%);
+    --d_blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    background-color: var(--d_blue);
+    color: #fff;
+    max-height: 100vh;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    background-color: var(--dg_blue);
+    width: 30%;
+    margin: 15% auto 17.5%;
+    padding: 3% 3% 2%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--n_green);
+}
+
+.mg-btm1_5 {
+    margin-bottom: 1.5rem;
+}
+
+p.quote {
+    font-size: 28px;
+}
+
+.divider {
+    width: 100%;
+}
+
+.dice {
+    margin: 25% auto;
+}
+
+.dice-bg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--n_green);
+    top: 3rem;
+    margin: auto;
+    transition: box-shadow 1s ease .05s;
+    border: none;
+}
+
+.dice-bg:hover {
+    box-shadow: 0px 0px 40px 0px var(--n_green);
+    cursor: pointer;
+}
+
+
+/* Tablet Viewport Design */
+
+@media screen and (max-width: 912px){
+    .card {
+        width: 90%;
+        margin: 32% auto 35.5%;
+        padding: 8% 6% 2%;
+    }
+
+    .mg-btm1_5 {
+        margin-bottom: 4rem;
+    }
+
+    h5 {
+        letter-spacing: 8px;
+        font-size: 1.5rem;
+    }
+
+    p.quote {
+        font-size: 56px;
+    }
+
+    .dice {
+        width: 45%;
+    }
+
+    .dice-bg {
+        width: 125px;
+        height: 125px;
+        top: 5rem;
+    }
+
+    .attribution {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .card {
+        margin: 32% auto 15.5%;
+    }
+
+    .mg-btm1_5 {
+        margin-bottom: 2rem;
+    }
+
+    h5 {
+        letter-spacing: 4px;
+        font-size: 0.8rem;
+    }
+
+    p.quote {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .dice {
+        width: 40%;
+        margin: 30% auto;
+    }
+
+    .dice-bg {
+        width: 75px;
+        height: 75px;
+        top: 3rem;
+    }
+
+    .attribution {
+        font-size: 11px;
+    }
+}
+
+/* Mobile Viewport Design */
+
+@media screen and (max-width: 414px) {
+    .card {
+        margin: 33% auto 40%;
+        padding: 11% 8% 2%;
+    }
+
+    .mg-btm1_5 {
+        margin-bottom: 2.5rem;
+    }
+
+    h5 {
+        letter-spacing: 6px;
+        font-size: 1.2rem;
+    }
+
+    .attribution {
+        font-size: 15px;
+    }
+}
